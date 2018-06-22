@@ -1,0 +1,64 @@
+
+
+	.features {
+		display: block;
+		border-radius: 0.25em;
+		border: solid 1px rgba(255, 255, 255, 0.15);
+		background: rgba(255, 255, 255, 0.15);
+		margin: 0 0 0 0;
+	}
+
+		.features section {
+			padding: 1.5em 1em 1.5em 2em ;
+			width: 80%;
+			border-top: solid 1px rgba(255, 255, 255, 0.75);
+			position: relative;
+		}
+		p{
+			padding-bottom: 0.1em;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.features {
+				display: block;
+			}
+
+				.features section {
+					border-top-width: 1px !important;
+					border-left-width: 0 !important;
+					width: 100%;
+				}
+
+					.features section:first-child {
+						border-top-width: 0 !important;
+					}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.features section {
+				padding: 2.5em 1.5em 20px 5.5em ;
+			}
+
+				.features section .icon {
+					left: 1.5em;
+					top: 2em;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.features section {
+				padding: 2em 1.5em 15px 1.5em ;
+			}
+
+				.features section .icon {
+					left: 0;
+					position: relative;
+					top: 0;
+				}
+
+		}
